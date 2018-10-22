@@ -249,3 +249,7 @@ func (r *Reader) unpackPVD() error {
 
 	return nil
 }
+
+func (r *Reader) PVD() PrimaryVolume {
+	return r.pvd
+}
